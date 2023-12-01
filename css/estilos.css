@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css2?family=Exo&display=swap);
+
+html {
+	font-size: 62.5%;
+    font-family: "Exo";
+    background-color: rgb(233, 227, 227);
+}
+
+header {
+    grid-area: header;
+    position: relative;
+    border-bottom: solid;
+    border-bottom-color: rgb(150, 150, 168);
+    background-color: rgb(243, 242, 245); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size:1.25rem;
+    text-align:justify;
+}
+
+header nav {
+    color: #000000;
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    margin:5px;
+}
+
+main.contenedor {
+    background-color: rgb(233, 227, 227);
+    grid-template-columns: 2fr 2fr 1fr;
+    display: grid;
+    grid-template-areas:        
+        "header  header header header header"        
+        "presentacion presentacion presentacion productos productos"        
+        "footer footer footer footer footer";
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+section {
+    grid-area: presentacion;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(150, 150, 168);
+    color:white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boton1 {
+    border:solid;
+    border-color: rgb(150, 150, 168);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(240, 248, 252);
+    text-align: center;
+    width: 150px;
+    line-height: 40px;
+ }
+
+ .boton2 {
+    border:solid;
+    border-color: rgb(150, 150, 168);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(240, 248, 252);
+    text-align: center;
+    width: 280px;
+    line-height: 30px;
+ }
+
+ .video {
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 90%;
+ }
+
+ .posicion-absoluta {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 100px;
+ }
+
+ .anuncio {
+    position: fixed;
+    top:400px;
+    left: 200px;
+    height: 50px;
+    width: 150px;
+    background-color: darkgray;
+    
+ }

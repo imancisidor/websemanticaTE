@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css2?family=Exo&display=swap);
+
+html {
+	font-size: 62.5%;
+    font-family: "Exo";
+    background-color: rgb(233, 227, 227);
+}
+
+header {
+    grid-area: header;
+    position: relative;
+    border-bottom: solid;
+    border-bottom-color: rgb(150, 150, 168);
+    background-color: rgb(243, 242, 245); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+header nav {
+    color: #000000;
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header article {
+    margin:5px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+section {
+    grid-area: detalle;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.imagen-float {
+    float: left;
+
+}
+
+p {
+    font-size: 1.8rem;
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(150, 150, 168);
+    color:white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boton1 {
+    border:solid;
+    border-color: rgb(150, 150, 168);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(240, 248, 252);
+    text-align: center;
+    width: 150px;
+    line-height: 40px;
+ }
+ 
+ .posicion-absoluta {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 100px;
+ }
